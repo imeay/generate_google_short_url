@@ -1,0 +1,14 @@
+{
+    "complieOnSave" : true,
+    "compilerOptions": {
+        "module": "commonjs",
+        "sourceMap": false,
+        "target": "es6",
+        "noEmitOnError" : false,
+        "lib" : ["dom","es2015"],
+        "outDir" : "lib",
+        "pretty" : true,
+        "experimentalDecorators" :  true,
+        "baseUrl" : "./src"
+    }
+}

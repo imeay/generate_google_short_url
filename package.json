@@ -1,0 +1,20 @@
+{
+  "name": "generate_google_short_url",
+  "version": "1.0.0",
+  "description": "generate google short url",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "google",
+    "shorturl"
+  ],
+  "author": "mimeay",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.0.1",
+    "koa-router": "^7.0.1",
+    "superagent": "^3.5.0"
+  }
+}
