@@ -9,6 +9,6 @@ export default class Util {
       longUrl : long_url
     };
     let url = `https:\/\/www.googleapis.com/urlshortener/v1/url?key=${google_key}`;
-    return request.get(url).send(data);
+    return request.post(url).send(data);
   }
 }
