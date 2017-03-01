@@ -4,7 +4,11 @@
   "description": "generate google short url",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bulid" : "tsc",
+    "dev-bulid" : "tsc --watch",
+    "start" : "node lib/index.js",
+    "dev-start" : "nodemon lib/index.js",
+    "test": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register src/test/**/*.ts"
   },
   "keywords": [
     "google",
@@ -13,8 +17,15 @@
   "author": "mimeay",
   "license": "ISC",
   "dependencies": {
+    "@types/mocha": "^2.2.39",
+    "@types/supertest": "^2.0.0",
+    "expect": "^1.20.2",
     "koa": "^2.0.1",
     "koa-router": "^7.0.1",
-    "superagent": "^3.5.0"
+    "mocha": "^3.2.0",
+    "superagent": "^3.5.0",
+    "supertest": "^3.0.0",
+    "ts-node": "^2.1.0",
+    "typescript": "^2.2.1"
   }
 }
