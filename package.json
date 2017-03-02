@@ -10,7 +10,7 @@
     "dev-start": "nodemon lib/index.js",
     "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha  lib/test/**/*",
     "ts-test": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register src/test/**/*.ts",
-    "coverage": "cat ./coverage/lcov.info | coveralls"
+    "coverage": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "keywords": [
     "google",
@@ -36,6 +36,7 @@
     "typescript": "^2.2.1"
   },
   "devDependencies": {
+    "coveralls": "^2.11.16",
     "istanbul": "^0.4.5"
   }
 }
