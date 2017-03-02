@@ -46,7 +46,7 @@ router.get('/short_url', validator({
     long_url : string().required()
   })}), 
   async function(ctx, next) {
-   let long_url = querystirng.escape(ctx.query.long_url || '');
+   let long_url = ctx.query.long_url || '';
    let { body } = await google_service.get_short_url(long_url);
    ctx.body = {
      msg : '',
