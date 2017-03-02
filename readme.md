@@ -1,3 +1,4 @@
+#generate_google_short_url ![https://travis-ci.org/imeay/generate_google_short_url.svg?branch=master](https://travis-ci.org/imeay/generate_google_short_url.svg?branch=master)
 # 短地址生成
 > 利用谷歌提供的的api实现
 
