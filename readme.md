@@ -1,4 +1,4 @@
-#generate_google_short_url ![https://travis-ci.org/imeay/generate_google_short_url.svg?branch=master](https://travis-ci.org/imeay/generate_google_short_url.svg?branch=master)
+#generate_google_short_url ![https://travis-ci.org/imeay/generate_google_short_url.svg?branch=master](https://travis-ci.org/imeay/generate_google_short_url.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/github/imeay/generate_google_short_url/badge.svg)](https://coveralls.io/github/imeay/generate_google_short_url)
 # 短地址生成
 > 利用谷歌提供的的api实现
 
@@ -17,7 +17,11 @@
 返回的格式如下：
 ```
 {
-  short_url : xxxxx
+  msg : '',
+  data : {
+   short_url : xxxxx
+  },
+  code : 200
 }
 ```
 
