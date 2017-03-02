@@ -8,7 +8,9 @@
     "dev-build": "tsc --watch",
     "start": "node lib/index.js",
     "dev-start": "nodemon lib/index.js",
-    "test": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register src/test/**/*.ts"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha  lib/test/**/*",
+    "ts-test": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register src/test/**/*.ts",
+    "coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "keywords": [
     "google",
@@ -32,5 +34,8 @@
     "supertest": "^3.0.0",
     "ts-node": "^2.1.0",
     "typescript": "^2.2.1"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5"
   }
 }

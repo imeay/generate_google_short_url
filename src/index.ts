@@ -24,7 +24,8 @@ app.use( async function(ctx, next) {
   try {
     await  next();
   } catch(e) {
-    let message = e.message || '服务器错误';
+    let msg = '服务器错误';
+    let message = e.message || e.msg;
     ctx.body = {
       msg : message,
       code : e.code || 9999,
@@ -46,7 +47,7 @@ router.get('/short_url', validator({
     long_url : string().required()
   })}), 
   async function(ctx, next) {
-   let long_url = ctx.query.long_url || '';
+   let long_url = ctx.query.long_url;
    let { body } = await google_service.get_short_url(long_url);
    ctx.body = {
      msg : '',
