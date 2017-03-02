@@ -4,10 +4,10 @@
   "description": "generate google short url",
   "main": "index.js",
   "scripts": {
-    "bulid" : "tsc",
-    "dev-bulid" : "tsc --watch",
-    "start" : "node lib/index.js",
-    "dev-start" : "nodemon lib/index.js",
+    "bulid": "tsc",
+    "dev-bulid": "tsc --watch",
+    "start": "node lib/index.js",
+    "dev-start": "nodemon lib/index.js",
     "test": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register src/test/**/*.ts"
   },
   "keywords": [
@@ -21,8 +21,12 @@
     "@types/supertest": "^2.0.0",
     "expect": "^1.20.2",
     "koa": "^2.0.1",
+    "koa-bunyan-logger": "^1.3.0",
+    "koa-context-validator": "^0.3.0",
+    "koa-pino-logger": "^2.1.0",
     "koa-router": "^7.0.1",
     "mocha": "^3.2.0",
+    "pino-tee": "^0.1.2",
     "superagent": "^3.5.0",
     "supertest": "^3.0.0",
     "ts-node": "^2.1.0",
