@@ -40,11 +40,10 @@ jobs:
       
       # run tests!
       - run: yarn test
-      - deploy:
-          production:
-            branch: master
-            heroku:
-              appname: generate-google-short-url
-            commands:
+  deploy:
+    production:
+      branch: master
+      heroku:
+        appname: generate-google-short-url
 
 
