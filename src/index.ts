@@ -60,8 +60,8 @@ router.get('/short_url', validator({
 
 app.use(router.routes(), router.allowedMethods());
 
-export const server = app.listen(1234, () => {
-  console.log('listen 1234');
+export const server = app.listen(process.env.PORT || 1234, () => {
+  console.log('server running');
 });
 
 
