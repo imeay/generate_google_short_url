@@ -45,5 +45,6 @@ jobs:
             branch: master
             heroku:
               appname: generate-google-short-url
+            commands:
 
 
