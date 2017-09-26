@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev-build": "tsc --watch",
+    "postinstall": "npm run build",
     "start": "node lib/index.js",
     "dev-start": "nodemon lib/index.js",
     "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha  lib/test/**/*",
