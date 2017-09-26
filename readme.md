@@ -9,10 +9,11 @@
 这个的话可以去谷歌开发者开发者中心申请 [https://console.developers.google.com](https://console.developers.google.com) ，因为我加了域名限制，所以只能在surl.mimeay.cc使用
 
 # 线上地址访问
+在 heroku 上创建了一个应用，正常情况的话，应该可以持续访问
 
-格式：http://surl.mimeay.cc/short_url?long_url={url}
+格式：https://generate-google-short-url.herokuapp.com/short_url?long_url={url}
  
-例子：http://surl.mimeay.cc/short_url?long_url=https://baidu.com
+例子：https://generate-google-short-url.herokuapp.com/short_url?long_url=https://baidu.com
 
 返回的格式如下：
 ```
